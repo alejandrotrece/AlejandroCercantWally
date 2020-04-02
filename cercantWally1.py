@@ -1,3 +1,8 @@
+
+Alejandro Martínez Rodríguez <alejandro.martinez@iesjoandaustria.org>
+dt., 31 de març 18:43 (fa 2 dies)
+per a Sergi
+
 import string
 import random
 
@@ -27,7 +32,9 @@ def populateLandscape(landscape):
     return landscape
 
 def whereIsWally(landscape,toFind):
-    posicio = -1
+    for pos in range(len(landscape)):
+      if landscape[pos] == "W":
+        posicio = pos+1
     #TODO
     #Completeu aquí el codi per fer la cerca de W (ally)
     return posicio

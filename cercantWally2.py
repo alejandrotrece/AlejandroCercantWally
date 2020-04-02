@@ -27,7 +27,13 @@ def populateLandscape(landscape):
     return landscape
 
 def whereIsWally(landscape,toFind):
-    posicio = -1
+    for pos in range(len(landscape)):
+      if landscape[pos] == "W":
+        if landscape[pos+1] == "a":
+          if landscape[pos+2] == "l":
+            if landscape[pos+3] == "l":
+              if landscape[pos+4] == "y":
+                posicio = pos+1
     #Completeu el codi
     return posicio
 
